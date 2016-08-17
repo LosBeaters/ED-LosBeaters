@@ -17,6 +17,7 @@ public class class_a03 {
         for (int i = 0; i <= ar.length - 1; i++){
             if (ar[i] == n){
                 System.out.println("Lo encontraste");
+                System.out.println("Se encuentra en la posición: " + i);
                 b = true;
                 break;
             } else {
@@ -32,25 +33,26 @@ public class class_a03 {
     public static int BB (int ar[], int n, int a){
         Ordenar(ar);
         int p = 1;
-        int i = ar[0], f = ar[a], c, vc;
-        for (int j = 0; j <= ar.length; j++){
-            if (i < f){
+        int i = 0, f = a, c, vc;
+        for (int j = 0; j <= ar.length - 1; j++){
+            if (i <= f){
                 c = (i + f) / 2;
                 vc = ar[c];
                 if (vc == n){
-                    return c;
-                } else if (n < c) {
+                    System.out.println("Lo encontraste");
+                    System.out.println("Se encuentra en la posición: " + c);
+                    break;
+                } else if (n < vc) {
                     f = c - 1;
                     p++;
-                } else if (n > c) {
+                } else if (n > vc) {
                     i = c + 1;
                     p++;
                 } else {
-                    return -1;
+                    System.out.println("No existe el elemento");;
                 }
             }
         }
-        //if (n == )
         return p;
     }
     
