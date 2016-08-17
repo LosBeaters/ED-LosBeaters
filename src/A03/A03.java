@@ -29,8 +29,20 @@ public class A03 {
         }
         System.out.print("Que número esta buscando: ");
         n = sc.nextInt();
-        p = class_a03_BS.BS(ar, n);
-        System.out.println("Recorriste " + p + " veces");
+        p = class_a03.BS(ar, n);
+        if (p == 1){
+            System.out.println("Recorriste " + p + " vez con el Algoritmo de Búsqueda Secuencial");
+        } else {
+            System.out.println("Recorriste " + p + " veces con el Algoritmo de Búsqueda Secuencial");
+        }
+        
+        p = class_a03.BB(ar, n, a);
+        if (p == 1){
+            System.out.println("Recorriste " + p + " vez con el Algoritmo de Búsqueda Binaria");
+        } else {
+            System.out.println("Recorriste " + p + " veces con el Algoritmo de Búsqueda Binaria");
+        }
+
     }
     
 }
