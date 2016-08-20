@@ -24,7 +24,7 @@ public class class_t01 {
                                                 le restara uno hasta llegar a 0 donde sería el final de su recursividad.*/
             }
         }
-        System.out.print("El exponente digitalizado fue: ");
+        System.out.print("El exponente digitalizado es: ");
         return n; //Regresara el exponente menor a 0 que se digitalizo en un principio
     }
 }
